@@ -1,0 +1,73 @@
+.search-form-wrapp
+    width: 350px
+
+.search-form
+    display: flex
+    flex-direction: column
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    position: fixed
+    margin-top: 10px
+    padding: 5px
+
+    &__input
+        padding: 5px
+        margin-bottom: 15px
+
+    &__genre
+        padding: 4px
+
+        &:hover
+            background: #e8f0f1
+
+        input
+            cursor: pointer
+            margin-right: 5px
+            
+        label 
+            cursor: pointer
+
+
+.search-form-genres
+    &__title 
+        margin: 5px 0
+
+.search-form-sort 
+    &__item 
+        padding: 5px
+
+    &__title 
+        margin: 5px 0
+        
+    &__label 
+        margin-left: 2px
+
+    &__items 
+        margin: 5px 0
+
+    &__direction
+        .search-form-sort__items
+            display: flex
+
+
+
+
+@media (max-width: 550px)
+    .search-form-wrapp
+        width: initial
+        
+    .search-form
+        position: initial
+
+        &__input 
+            width: 100%
+
+        &__genre
+            width: 130px
+
+    .search-form-genres
+
+        &__items 
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
