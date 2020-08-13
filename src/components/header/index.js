@@ -8,13 +8,13 @@ export const Header = () => {
 
     return (
         <div className="header__panel">
-            <Link to="/">
+            <Link to="/movie-searcher">
                 <div className="header__panel__logo">
                     MoviesDB Search
                 </div>
             </Link>
             <div className="header__panel__links">
-            <Link to="/Favourites">
+            <Link to="/movie-searcher/Favourites">
                 <div className="header__panel__favourites">
                     Favourites
                 </div>

@@ -18,7 +18,7 @@ export const Movie = ({ movie, storageUpdate }) => {
 
     return (
         <div className="movie">
-            <Link to={"/MoviePage/" + movie.id}>
+            <Link to={"/movie-searcher/MoviePage/" + movie.id}>
                 <div className="movie__img">
                     <Image src={'https://image.tmdb.org/t/p/original' + movie.poster_path} />
                 </div>

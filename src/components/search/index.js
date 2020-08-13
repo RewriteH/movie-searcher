@@ -17,18 +17,18 @@ export const Search = () => {
     }, [dispatch])
 
     const queryOnChange = e => {
-        syncUrl('/search/movie', { name: 'query', target: e.target.value })
+        syncUrl('/movie-searcher/search/movie', { name: 'query', target: e.target.value })
         dispatch(setQuery(e.target.value))
     }
 
     const selectedGenresChange = e => {
         if (e.target.checked) {
-            syncUrl('/discover/movie', {
+            syncUrl('/movie-searcher/discover/movie', {
                 name: 'genres',
                 target: [...discoverGenres, e.target.value]
             })
         } else {
-            syncUrl('/discover/movie', {
+            syncUrl('/movie-searcher/discover/movie', {
                 name: 'genres',
                 target: discoverGenres.filter(g => g !== e.target.value)
             })

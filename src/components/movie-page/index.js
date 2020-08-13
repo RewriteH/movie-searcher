@@ -45,7 +45,7 @@ export const MoviePage = () => {
                         <div className="extra-movie__genres">
                             <h4>Genres:</h4>
                             <div>
-                                {movie.genres.map(genre =>
+                                {!!movie.genres.length && movie.genres.map(genre =>
                                     <h6 key={genre.id}>{genre.name}</h6>
                                 )}
                             </div>

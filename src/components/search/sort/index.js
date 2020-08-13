@@ -18,13 +18,13 @@ export const Sort = () => {
     const discoverSort = useSelector(state => state.search.discover.sort)
 
     const sortOnChange = e => {
-        syncUrl('/discover/movie', {name: 'sort_by', target: `${e.target.value}.${direction}`})
+        syncUrl('/movie-searcher/discover/movie', {name: 'sort_by', target: `${e.target.value}.${direction}`})
         setSort(e.target.value)
         dispatch(setDiscoverSort(`${e.target.value}.${direction}`))
     }
 
     const directionOnChange = e => {
-        syncUrl('/discover/movie', {name: 'sort_by', target: `${sort}.${e.target.value}`})
+        syncUrl('/movie-searcher/discover/movie', {name: 'sort_by', target: `${sort}.${e.target.value}`})
         setDirection(e.target.value)
         dispatch(setDiscoverSort(`${sort}.${e.target.value}`))
     }

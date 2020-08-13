@@ -14,11 +14,11 @@ export const App = () => {
         <>
             <Router >
                 <Header />
-                <Route exact path="/" component={MainPage} />
-                <Route exact path="/search/movie" component={MainPage} />
-                <Route exact path="/discover/movie" component={MainPage} />
-                <Route exact path="/MoviePage/:id" component={MoviePage} />
-                <Route exact path="/Favourites" component={FavouritesPage} />
+                <Route exact path="/movie-searcher" component={MainPage} />
+                <Route exact path="/movie-searcher/search/movie" component={MainPage} />
+                <Route exact path="/movie-searcher/discover/movie" component={MainPage} />
+                <Route exact path="/movie-searcher/MoviePage/:id" component={MoviePage} />
+                <Route exact path="/movie-searcher/Favourites" component={FavouritesPage} />
             </Router>
         </>
     )
