@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux'
-import { setPage } from '../../redux/утки/search'
+import { setPage } from '../../redux/ducks/search'
 import './pagination.sass'
 import { syncUrl } from '../../utils/syncUrl'
 import { pagesCount } from '../../redux/selectors'

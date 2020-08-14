@@ -1,6 +1,6 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
-import {movies} from './утки/movies'
-import {search} from './утки/search'
+import {movies} from './ducks/movies'
+import {search} from './ducks/search'
 
 const rootReducer = combineReducers({search, movies})
 

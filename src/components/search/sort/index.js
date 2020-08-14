@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux'
-import { setDiscoverSort } from '../../../redux/утки/search'
+import { setDiscoverSort } from '../../../redux/ducks/search'
 import {syncUrl} from '../../../utils/syncUrl'
 
 const arr = [

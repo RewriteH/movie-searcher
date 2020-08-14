@@ -3,7 +3,7 @@ import { Pagination } from '../pagination'
 import { Movies } from '../movies'
 import { Search } from '../search'
 import { useDispatch, useSelector } from 'react-redux'
-import { refreshMovies } from '../../redux/утки/movies'
+import { refreshMovies } from '../../redux/ducks/movies'
 import './main-page.sass'
 
 export const MainPage = () => {

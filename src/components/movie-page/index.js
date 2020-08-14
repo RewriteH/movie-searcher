@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Image } from '../image'
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
-import { setExtraMovie, setSimiliarMovies } from '../../redux/утки/movies'
+import { setExtraMovie, setSimiliarMovies } from '../../redux/ducks/movies'
 import { Movies } from '../movies'
 import './movie-page.sass'
 

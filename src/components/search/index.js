@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { DebounceInput } from 'react-debounce-input';
 import { useDispatch, useSelector } from 'react-redux'
-import { setGenres } from '../../redux/утки/search'
-import { setQuery, toggleGenre } from '../../redux/утки/search'
+import { setQuery, toggleGenre, setGenres } from '../../redux/ducks/search'
 import { Sort } from './sort'
 import { syncUrl } from '../../utils/syncUrl'
 import './search.sass'
